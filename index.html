@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Finanças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <h1>Gestor de Finanças</h1>
+            
+        <section>
+            <div>
+                <label for="ivalor">Valor: </label>
+                <input type="text" name="valor" id="ivalor" placeholder="Digite o valor">
+            </div>
+
+            <div>
+                <label for="iganho">Ganho</label>
+                <input type="radio" name="descricao" id="iganho" placeholder="Digite a descrição">
+            </div>
+
+            <div>
+                <label for="idespesa">Despesa</label>
+                <input type="radio" name="descricao" id="idespesa" placeholder="Digite a descrição">
+            </div>
+            <button onclick="gestor()" id="btn-enviar">Enviar</button>
+        </section>
+        <article>
+            <p id="res-total">Total: 0</p>
+            <p id="res-despesa">Despesa: 0</p>
+            <p id="res-ganho">Ganho: 0</p>
+        </article>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
